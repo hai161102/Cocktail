@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Cocktail</string>
+    <string name="ok">Oke</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+</resources>

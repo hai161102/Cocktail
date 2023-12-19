@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "270151504744",
+    "project_id": "cocktail-c72ca",
+    "storage_bucket": "cocktail-c72ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270151504744:android:acad1941b602b5ed9a7cdd",
+        "android_client_info": {
+          "package_name": "com.mobi.btl.cocktail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQIuRWTRoEVDTZA4IEhUIaCJ3-MfSymcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

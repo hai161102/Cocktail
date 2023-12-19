@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_item_cocktail"
+        android:backgroundTint="#1A000000">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center"
+            android:background="@drawable/bg_title"
+            android:backgroundTint="@android:color/transparent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_semi_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                android:id="@+id/title"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/addFvr"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ic_not_favorite"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    />
+                <ImageView
+                    android:id="@+id/info"
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:src="@drawable/ic_info"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:background="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_4sdp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/thumb"
+                    android:src="@drawable/ic_launcher_background"/>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="@dimen/_4sdp"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_info"
+                    android:id="@+id/tagData"/>
+                <include layout="@layout/layout_info"
+                    android:id="@+id/category"/>
+                <include layout="@layout/layout_info"
+                    android:id="@+id/iba"/>
+                <include layout="@layout/layout_info"
+                    android:id="@+id/alcoholic"/>
+                <include layout="@layout/layout_info"
+                    android:id="@+id/glass"/>
+                <include layout="@layout/layout_info"
+                    android:id="@+id/instructions"/>
+                <include layout="@layout/layout_info"
+                    android:id="@+id/banquyen"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
