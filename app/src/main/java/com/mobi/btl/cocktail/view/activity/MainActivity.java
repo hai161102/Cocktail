@@ -109,7 +109,9 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
+                if (s.length() <= 0) {
+                    updateUI();
+                }
             }
 
             @Override
@@ -132,9 +134,6 @@ public class MainActivity extends BaseActivity<ActivityMainBinding> {
                             Log.d("TAG_Main", "onFailure: " + t.getMessage());
                         }
                     });
-                }
-                else {
-                    updateUI();
                 }
             }
         });
