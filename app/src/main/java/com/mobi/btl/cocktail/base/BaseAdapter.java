@@ -23,13 +23,13 @@ public abstract class BaseAdapter<M, E extends ViewDataBinding, T extends BaseHo
         notifyItemInserted(list.indexOf(data));
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     public void addMulti(List<M> data, boolean isClear) {
         if (isClear) {
             this.list.clear();
         }
         list.addAll(data);
-        notifyItemRangeInserted(this.list.indexOf(data.get(0)),
-                list.indexOf(data.get(data.size() - 1)));
+        notifyDataSetChanged();
     }
     @SuppressWarnings("unchecked")
     @Override
